@@ -1,4 +1,4 @@
-// Apply dark styling, header-dark, when scrolling down the page
+// Apply dark styling - 'header-dark' - when scrolling down the page more than the height of header
 const header = document.querySelector('.header');
 const headerHeigh = header.offsetHeight;
 document.addEventListener('scroll', () => {
@@ -10,8 +10,7 @@ document.addEventListener('scroll', () => {
 
 })
 
-
-// When scrolling down the home section, control opacity
+// When scrolling down the home section, make elements in home section transparent gradually
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
@@ -19,6 +18,7 @@ document.addEventListener('scroll', () => {
 })
 
 
+// Only show arrow-up button when the home section is scrolled down more than half of its height
 const arrow = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY / homeHeight < 0.5) {
@@ -27,3 +27,4 @@ document.addEventListener('scroll', () => {
     arrow.classList.remove('arrow-up--unshow');
   }
 })
+
