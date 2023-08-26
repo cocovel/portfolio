@@ -21,10 +21,12 @@ document.addEventListener('scroll', () => {
 // Only show arrow-up button when the home section is scrolled down more than half of its height
 const arrow = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-  if (window.scrollY / homeHeight < 0.5) {
-    arrow.classList.add('arrow-up--unshow');
+
+  if (window.scrollY / homeHeight > 0.5) {
+    arrow.classList.add('arrow-up--show')
   } else {
-    arrow.classList.remove('arrow-up--unshow');
+    arrow.classList.remove('arrow-up--show');
   }
+
 })
 
