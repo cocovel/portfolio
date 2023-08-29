@@ -1,3 +1,5 @@
+'use strict';
+
 // Apply dark styling - 'header-dark' - when scrolling down the page more than the height of header
 const header = document.querySelector('.header');
 const headerHeigh = header.offsetHeight;
@@ -25,6 +27,8 @@ document.addEventListener('scroll', () => {
   if (window.scrollY / homeHeight > 0.5) {
     arrow.classList.add('arrow-up--show')
   } else {
+
+
     arrow.classList.remove('arrow-up--show');
   }
 
