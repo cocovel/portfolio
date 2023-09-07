@@ -219,14 +219,27 @@ button:focus {
 
 .jobs {
   text-align:start;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 .job {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 1rem;
+  gap: 20px;
+  padding-left: 0;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 60%;
+
+}
+.job__img {
+  width: 135.5px;
+  height: 71.5px;
+}
+
+.school__img {
+  width: 135.5px;
+  height: 35.195px;
 }
 
 .job__name {
@@ -238,10 +251,7 @@ button:focus {
   font-size: 0.8rem;
 }
 
-.job__img {
-  width: 100px;
-  height: 68.57px;
-}
+
 
 /* Skills */
 
