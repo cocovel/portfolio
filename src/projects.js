@@ -13,7 +13,6 @@ categories.addEventListener('click', (event) => {
   filterProjects(filter)
 });
 
-
 function handleActiveSelection(target) {
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
